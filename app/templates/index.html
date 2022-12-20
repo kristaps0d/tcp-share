@@ -1,0 +1,23 @@
+{% extends 'extends/base.html' %}
+
+{% block main %}
+
+<h1>My hidden treasure chest! ( ˘ ³˘)♥</h1>
+<hr></hr>
+
+<div>
+    {% for i in urls %}
+        <p>
+            <a href="{{ i[1] }}">{{ i[0] }}</a>
+        </p>
+    {% endfor %}
+</div>
+
+<hr></hr>
+
+<div style="margin-top: 1rem;">
+    <p><h4>Your client ({{ipaddr}}):</h4></p>
+    <p><h4>{{ useragent }}</h4></p>
+</div>
+
+{% endblock %}

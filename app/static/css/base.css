@@ -1,0 +1,20 @@
+body {
+    background-color: rgb(197, 220, 223);
+    color: rgb(0, 0, 0);
+
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+div {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+p {
+  width: 100%;
+  margin: 0;
+}
+
+h4 {
+  margin: 0;
+}
