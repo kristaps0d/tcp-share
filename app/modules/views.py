@@ -10,7 +10,7 @@ URLS = [[f, URL + f] for f in URN]
 
 @app.route('/')
 def index():
-    ip = request.remote_addr
+    ip = request.access_route[-1]
     ua = request.headers.get('User-Agent')
     return render_template('index.html', urls=URLS, ipaddr=ip, useragent=ua, title=f'- {datetime.date.today()} -')
 
