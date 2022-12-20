@@ -18,7 +18,7 @@ async function animation() {
         // State counter
         state ++;
         if (state > 24) {
-            state = 0;
+            state = 1;
         }
 
         favObj.setAttribute('href', getFaviconUrl(state))
